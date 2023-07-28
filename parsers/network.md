@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | ---------------------- |
 | Linux   | `006#Network`          |
 | Windows | `Win32_NetworkAdapter` |
+| macOS   | `SPNetworkDataType`    |
 
 You can call the module either by enumerating through the entire dictionary of the network cards, or you can use the card name directly as follows:
 
@@ -35,5 +36,8 @@ which `<property>` is:
 | ChipID        | String | Device chip ID      |
 
 {% hint style="warning" %}
-Network duplex type and bus ID are not supported yet on Windows.
+**Compatibility notes:**
+
+* Network duplex type and bus ID are not supported yet on Windows.
+* Unfortunately, for macOS users, the majority of the properties are not supported yet.
 {% endhint %}

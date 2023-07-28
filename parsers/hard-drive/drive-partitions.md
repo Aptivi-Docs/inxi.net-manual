@@ -36,6 +36,10 @@ Partition size is automatically GiB in Inxi on Unix systems, and is in bytes on 
 
 ### Logical partitions
 
+{% hint style="warning" %}
+This is not available for non-Windows systems.
+{% endhint %}
+
 Inxi.NET has an additional option where you can provide logical partitions. They're found on `LogicalParts` module which you can either call by enumerating through the entire dictionary of the partitions, or you can use their names directly as follows:
 
 ```csharp

@@ -8,10 +8,11 @@ This lists information about the processors that are parsed by Inxi. You can use
 
 Module name according to each operating system:
 
-| OS      | Module name       |
-| ------- | ----------------- |
-| Linux   | `003#CPU`         |
-| Windows | `Win32_Processor` |
+| OS      | Module name          |
+| ------- | -------------------- |
+| Linux   | `003#CPU`            |
+| Windows | `Win32_Processor`    |
+| macOS   | `SPHardwareDataType` |
 
 You can call the module either by enumerating through the entire dictionary of the processors, or you can use their names directly as follows:
 
@@ -36,8 +37,9 @@ which `<property>` is:
 | Speed     | String  | CPU speed                   |
 
 {% hint style="warning" %}
-**Compatibility info:**
+**Compatibility notes:**
 
 * CPU milestone, topology, and bogomips are not implemented yet on Windows
 * L3 cache size is not implemented yet on Linux
+* L2 cache size and CPU speed are only supported on macOS
 {% endhint %}

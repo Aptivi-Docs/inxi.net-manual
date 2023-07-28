@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | ----------------------- |
 | Linux   | `004#Graphics`          |
 | Windows | `Win32_VideoController` |
+| macOS   | `SPDisplaysDataType`    |
 
 You can call the module either by enumerating through the entire dictionary of the graphics cards, or you can use the graphics card name directly as follows:
 
@@ -30,5 +31,8 @@ which `<property>` is:
 | ChipID        | String | Device ID           |
 
 {% hint style="warning" %}
-Device bus ID is not supported yet on Windows.
+**Compatibility notes:**
+
+* Device bus ID property is not supported yet on Windows.
+* GPU driver, bus ID, and driver version properties are not supported yet on macOS
 {% endhint %}

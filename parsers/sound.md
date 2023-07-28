@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | ------------------- |
 | Linux   | `005#Audio`         |
 | Windows | `Win32_SoundDevice` |
+| macOS   | `SPAudioDataType`   |
 
 You can call the module either by enumerating through the entire dictionary of the sound cards, or you can use their names directly as follows:
 
@@ -30,5 +31,8 @@ which `<property>` is:
 | ChipID   | String | Device ID         |
 
 {% hint style="warning" %}
-Bus ID is not supported yet on Windows.
+**Compatibility notes:**
+
+* Bus ID is not supported yet on Windows.
+* Bus ID and chip ID properties are not supported yet on macOS.
 {% endhint %}

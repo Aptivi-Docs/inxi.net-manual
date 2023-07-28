@@ -10,6 +10,7 @@
 ## Parsers
 
 * [📀 BIOS](parsers/bios.md)
+* [🔋 Battery](parsers/battery.md)
 * [🖼 Graphics](parsers/graphics.md)
 * [🗃 Hard Drive](parsers/hard-drive/README.md)
   * [🍕 Drive partitions](parsers/hard-drive/drive-partitions.md)

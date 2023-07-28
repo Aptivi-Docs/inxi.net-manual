@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | ------------------------- |
 | Linux   | `011#Info` > `002#Memory` |
 | Windows | `Win32_OperatingSystem`   |
+| macOS   | `SPHardwareDataType`      |
 
 You can call the module as follows:
 
@@ -32,5 +33,8 @@ Memory is automatically GiB in Inxi on Unix systems, and is in bytes on Windows 
 {% endhint %}
 
 {% hint style="warning" %}
-Free memory is not implemented yet on Linux.
+**Compatibility notes:**
+
+* Free memory is not implemented yet on Linux.
+* Used memory and free memory properties are not implemented yet on macOS.
 {% endhint %}

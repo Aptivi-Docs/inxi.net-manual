@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | ------------------------------------------------------------------------ |
 | Linux   | `001#Machine`                                                            |
 | Windows | <p><code>Win32_ComputerSystem</code><br><code>Win32_BaseBoard</code></p> |
+| macOS   | `SPHardwareDataType`                                                     |
 
 You can call the module as follows:
 
@@ -31,5 +32,7 @@ which `<property>` is:
 | MoboModel        | String | Motherboard model                |
 
 {% hint style="warning" %}
-Machine chassis is not supported yet on Windows.
+**Compatibility notes:**
+
+* Machine chassis is not supported yet on Windows.
 {% endhint %}

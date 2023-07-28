@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | --------------------------------------------------------------------------------------------------------- |
 | Linux   | `007#Drives`                                                                                              |
 | Windows | <p><code>Win32_DiskDrive</code><br><code>Win32_DiskPartition</code><br><code>Win32_LogicalDisk</code></p> |
+| macOS   | `SPStorageDataType`                                                                                       |
 
 You can call the module either by enumerating through the entire dictionary of the hard drives, or you can use their names directly as follows:
 
@@ -36,5 +37,8 @@ Drive size is automatically GiB in Inxi on Unix systems, and is in bytes on Wind
 {% endhint %}
 
 {% hint style="warning" %}
-Drive speed is not implemented yet on Windows
+**Compatibility notes:**
+
+* Drive speed property is not implemented yet on Windows
+* Drive speed and vendor properties are not supported yet on macOS
 {% endhint %}

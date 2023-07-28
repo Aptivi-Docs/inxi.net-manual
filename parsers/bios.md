@@ -12,6 +12,7 @@ Module name according to each operating system:
 | ------- | ------------- |
 | Linux   | `001#Machine` |
 | Windows | `Win32_BIOS`  |
+| macOS   | `N/A`         |
 
 You can call the module as follows:
 
@@ -26,3 +27,9 @@ which `<property>` is:
 | BIOS     | String | BIOS name         |
 | Date     | String | BIOS release date |
 | Version  | String | BIOS version      |
+
+{% hint style="warning" %}
+**Compatibility info:**
+
+* BIOS information is not implemented in macOS.
+{% endhint %}
